@@ -22,8 +22,14 @@
 
 // ported and adapted from Wine, dlls/winemac.drv/opengl.c
 #include <CoreFoundation/CoreFoundation.h>
-#include <CoreGraphics/CGDirectDisplay.h>
+
+//#include <CoreGraphics/CGDirectDisplay.h> // For macos
 #include "boxedwine.h"
+
+#import <OpenGLES/ES3/gl.h>
+#import <OpenGLES/ES3/glext.h>
+#import <GLKit/GLKit.h>
+
 #define GL_SILENCE_DEPRECATION
 #include <OpenGL/OpenGL.h>
 #include <OpenGL/glu.h>
