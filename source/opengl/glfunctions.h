@@ -1,3 +1,7 @@
+#import <OpenGLES/ES3/gl.h>
+#import <OpenGLES/ES3/glext.h>
+#import <GLKit/GLKit.h>
+
 GL_FUNCTION(LogicOp, void, (GLenum opcode), (ARG1),,,("glLogicOp"))
 GL_FUNCTION(ClearIndex, void, (GLfloat c), (fARG1),,,("glClearIndex"))
 GL_FUNCTION(ClearColor, void, (GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha), (fARG1, fARG2, fARG3, fARG4),,,("glClearColor"))
