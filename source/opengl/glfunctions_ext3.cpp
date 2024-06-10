@@ -2,6 +2,7 @@
 
 #ifndef DISABLE_GL_EXTENSIONS
 #ifdef BOXEDWINE_OPENGL
+
 #include GLH
 #include "glcommon.h"
 #include "glMarshal.h"

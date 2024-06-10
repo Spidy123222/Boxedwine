@@ -17,6 +17,12 @@
  */
 #include "boxedwine.h"
 
+#if TARGET_OS_IOS
+    #import <OpenGLES/ES3/gl.h>
+    #import <OpenGLES/ES3/glext.h>
+    #import <GLKit/GLKit.h>
+#endif
+
 #ifdef BOXEDWINE_OPENGL_SDL
 #include <SDL_opengl.h>
 #include "../glcommon.h"
